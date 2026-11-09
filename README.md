@@ -26,7 +26,7 @@ The original Transformer–GRU and Unown are **different models**. Unown was rel
 - Belief classifier training: **2,334 valid training BO3**, **592 validation BO3**; a separate frozen test scored **592/592 BO3**. Presence and multiclass count Brier are distinct.
 - Particle/Rao–Blackwell variants were implemented and benchmarked; they did **not** outperform the baseline on the reported selected 16-history panel.
 - A historical **top-10% leaderboard peak is achieved**.
-- [Project compute audit](docs/COMPUTE_USAGE.md): **about 97 Kaggle GPU-session hours** through [removed], including failed runs and GPU benchmarks; For the final tuned model **about 72 T4 device-hours was spent**.
+- [Project compute audit](docs/COMPUTE_USAGE.md): **about 97 Kaggle GPU-session hours**, including failed runs and GPU benchmarks; For the final tuned model **about 72 T4 device-hours was spent**.
 
 The author reports a leaderboard-score gain after fine-tuning. That is separate from statistical conclusions on a particular fixed local BO3 panel.
 
