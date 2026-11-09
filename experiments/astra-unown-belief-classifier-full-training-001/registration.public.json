@@ -1,0 +1,69 @@
+{
+  "notice": "Historical scientific registration excerpt, not current compute or submission authorization. Operational authority and private inputs omitted.",
+  "scientific_configuration": {
+    "state": "FROZEN",
+    "run": "astra-unown-belief-classifier-full-training-001",
+    "training_BO3": 2334,
+    "validation_BO3": 592,
+    "locked_test_BO3": 592,
+    "fits": [
+      {
+        "size": "full",
+        "family": "Bayes",
+        "seed": 0
+      },
+      {
+        "size": "full",
+        "family": "Trees",
+        "seed": 11
+      },
+      {
+        "size": "full",
+        "family": "Trees",
+        "seed": 29
+      },
+      {
+        "size": "full",
+        "family": "MLP",
+        "seed": 11
+      },
+      {
+        "size": "full",
+        "family": "MLP",
+        "seed": 29
+      },
+      {
+        "size": "full",
+        "family": "GRU",
+        "seed": 11
+      },
+      {
+        "size": "full",
+        "family": "GRU",
+        "seed": 29
+      }
+    ],
+    "models": "Unchanged005 architectures/residuals/features/losses/AdamW/six epochs/patience3/min_delta1e-5; no deck-head fix or projection",
+    "neural_weighting": "Uniform once-per-epoch permutation of all2334; per-record factor2334*p(deck)/(2*n(deck,chooser)); no weighted sampling",
+    "tree_weighting": "Original32 stages4/4 cyclic chooser-balanced windows per deck; existing37*p(deck) batch loss weights, no additional count correction",
+    "bayes_weighting": "One final legal ledger per BO3; class-conditional chooser weight n(deck)/(2*n(deck,chooser)); empirical class prevalence not fitted, unchanged n/100 prevalence prior; alpha smoothing unchanged",
+    "tree_coverage_rule": "Every valid training BO3 at least twice in32 stages; verify both seeds before launch",
+    "bootstrap": "20000 paired wholeBO3 within validation deck/chooser; common resampling across old/new methods/seeds; compare full toA and same-family/same-seed592 subset; seed means insideBO3, not ensemble",
+    "primary": "A-defined uncertain-hand Brier,30-list n/82; secondary full37-list n/100 and all existing diagnostics",
+    "caps": {
+      "CPU_seconds": 72000,
+      "elapsed_seconds": 86400,
+      "fit_CPU_seconds": 36000,
+      "per_fit_CPU_seconds": {
+        "Bayes": 600,
+        "Trees": 2700,
+        "MLP": 5400,
+        "GRU": 7200
+      },
+      "compute_threads": 4,
+      "additional_private_bytes": 8589934592
+    },
+    "GPU_seconds": 0,
+    "test_scoring": 0
+  }
+}

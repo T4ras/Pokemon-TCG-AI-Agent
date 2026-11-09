@@ -1,0 +1,59 @@
+{
+  "version": "belief-dataset-v1",
+  "count_support": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "prediction_points": "up to24 hash-selected genuine decisions/game; full forced/genuine legal callback sequence retained",
+  "raw_components": [
+    "legal JSONL.gz",
+    "diagnostic targets JSONL.gz",
+    "provenance JSONL.gz"
+  ],
+  "BO3_per_raw_shard": 16,
+  "legal_keys": [
+    "current",
+    "select",
+    "logs"
+  ],
+  "excluded_model_features": [
+    "game index",
+    "match score",
+    "previous outcomes",
+    "opponent identity",
+    "hidden targets",
+    "native opaque state"
+  ],
+  "global_features": "16-bin signed sketches of match lower bounds; exact known H/D/P/B counts; within-game revealed log identities;20 public scalars;37 legal baseline deck weights",
+  "local_features": "8-bit unique query index;7 normalized A moments; known-hand count;3 lower/upper legal count bounds; maximum library copies; full A count marginals",
+  "event_features": "same six legal sketches,20 public scalars,24 legal log-type frequencies; full ordered within-game callback sequence",
+  "dimensions": {
+    "global_X": 153,
+    "event_X": 140,
+    "local_X": 77
+  },
+  "sketch": "SHA256 card-sketch-v1;16 signed bins; fixed lossy representation, no text vectors",
+  "neural_reset": "zero GRU state at every game; only legal match deck lower bounds cross games; no history truncation",
+  "distribution": "marginal unknown-H/full-D/full-P counts; original count support up to17",
+  "mask": "legal known lower bounds, physical-copy domains, public sizes and maximum compatible-list copies; no hidden identity",
+  "reconciliation": "same legal support masking and normalization for all methods; no joint zone-total projection; report remaining consistency violations",
+  "limitations": "marginals do not define coherent joint hidden worlds; event encoding is lossy; raw records support further legal-history encodings, not arbitrary counterfactual simulation",
+  "query_count": 143,
+  "public_export_note": "Private card identity query list and per-identity maximum counts omitted; dimensions and feature/distribution definitions retained."
+}

@@ -1,0 +1,30 @@
+{
+  "notice": "Historical scientific registration excerpt, not current compute or submission authorization. Operational authority and private inputs omitted.",
+  "scientific_configuration": {
+    "state": "REGISTERED_BEFORE_TEST_ACCESS",
+    "objective": "Descriptive three-hidden-zone Brier evaluation of all existing validation-selected supervised candidates; no selection or tuning.",
+    "test_BO3": 592,
+    "test_points": "Original up-to24 hashed meaningful decisions pergame; exact full legal recurrent prefixes including forced observations",
+    "models": "A plus21 validation-selected Bayes/Trees/MLP/GRU fits at296/592/2334 trainBO3, individualseeds11/29 where relevant. No last/intermediate/probe checkpoints.",
+    "primary": "Binary presence Brier: ((1-P(count=0))-1[true_count>0])^2; mean across143cardIDs perzone, decisions within game, equalgames/BO3, equalchooser/deck weighted n/82 passing30 lists. Also n/100 full37list weighting.",
+    "hand_definition": "Primary uses unknown portion of hand, matching previous benchmark; known-hand cards separately tracked. Also actual total-hand presence with known cards clamped to1.",
+    "secondary": "Same presence Brier restricted perzone by unchanged baseline A presence between0.1 and0.9 inclusive; fixed acrossmodels. Also multiclass count Brier summed across18countcategories then averaged143queries.",
+    "uncertainty": "10000 paired wholeBO3 bootstrap samples within37deck×2chooser strata; identical resampling acrossmethods. Percentile95 intervals descriptive, no winner selection; seed means average scores withinBO3, not an ensemble.",
+    "sampling_seed": 900002,
+    "training": 0,
+    "optimizer_updates": 0,
+    "new_native_matches": 0,
+    "GPU_seconds": 0,
+    "test_previously_scored": false,
+    "test_status_after": "Opened for this fixed evaluation; cannot be treated as untouched in future development.",
+    "limits": {
+      "CPU_seconds": 14400,
+      "elapsed_seconds": 10800,
+      "compute_threads_max": 4,
+      "workers": 2,
+      "threads_per_worker": 1,
+      "private_bytes": 2147483648
+    },
+    "failure_rule": "Record missing/failed IDs, no replacement or retry; incomplete coverage explicitly labelled. Never replace failed model/choose checkpoint bytest results."
+  }
+}

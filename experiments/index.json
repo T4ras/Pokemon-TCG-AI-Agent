@@ -1,0 +1,158 @@
+[
+  {
+    "run": "ml-phase-one-001",
+    "title": "Original recurrent BC/PPO pilot",
+    "report": "reports/ml-phase-one.md",
+    "implementation": [
+      "src/ptcg_agent/learning/model.py",
+      "src/ptcg_agent/learning/training.py",
+      "src/ptcg_agent/learning/pilot.py"
+    ],
+    "recomputed_for_export": false,
+    "registration": "experiments/ml-phase-one-001/registration.public.json"
+  },
+  {
+    "run": "bc-full-ocean-recovery-001",
+    "title": "Behavioral cloning and numerical recovery",
+    "report": "reports/bc-full-ocean-recovery.md",
+    "implementation": [
+      "src/ptcg_agent/learning/recovery_bc.py"
+    ],
+    "recomputed_for_export": false,
+    "registration": "experiments/bc-full-ocean-recovery-001/registration.public.json"
+  },
+  {
+    "run": "rl-lambda-entropy-stage3-001",
+    "title": "Original-model PPO and fixed evaluation",
+    "report": "reports/rl-lambda-entropy-stage3.md",
+    "implementation": [
+      "src/ptcg_agent/learning/rl_stage3.py"
+    ],
+    "recomputed_for_export": false,
+    "registration": "experiments/rl-lambda-entropy-stage3-001/registration.public.json"
+  },
+  {
+    "run": "astra-unown-gradiant-benchmark-001",
+    "title": "Released Unown compatibility and comparison",
+    "report": "reports/astra-unown-gradiant-benchmark.md",
+    "implementation": [
+      "scripts/unown_runner/",
+      "models/unown/"
+    ],
+    "recomputed_for_export": false,
+    "registration": "experiments/astra-unown-gradiant-benchmark-001/registration.public.json"
+  },
+  {
+    "run": "astra-unown-corrected-hydrapple-ppo-6h-001",
+    "title": "Corrected full-policy Unown PPO",
+    "report": "reports/astra-unown-corrected-hydrapple-ppo-6h.md",
+    "implementation": [
+      "scripts/unown_corrected_ppo_core.py",
+      "scripts/unown_corrected_ppo_train.py"
+    ],
+    "recomputed_for_export": false,
+    "registration": "experiments/astra-unown-corrected-hydrapple-ppo-6h-001/registration.public.json"
+  },
+  {
+    "run": "astra-unown-new-card-embedding-continuation-001",
+    "title": "Sparse new-card adaptation continuation",
+    "report": "reports/astra-unown-new-card-embedding-continuation.md",
+    "implementation": [
+      "scripts/unown_embedding/",
+      "scripts/unown_embedding_continuation/"
+    ],
+    "recomputed_for_export": false,
+    "registration": "experiments/astra-unown-new-card-embedding-continuation-001/registration.public.json"
+  },
+  {
+    "run": "astra-unown-belief-native-validation-002",
+    "title": "Legal compiler and particle-filter validation",
+    "report": "reports/astra-unown-belief-tracker-validation.md",
+    "implementation": [
+      "scripts/unown_belief_native_filter.py",
+      "scripts/unown_belief_native_state.py"
+    ],
+    "recomputed_for_export": false,
+    "registration": "experiments/astra-unown-belief-native-validation-002/registration.public.json"
+  },
+  {
+    "run": "astra-unown-belief-development-repair-003",
+    "title": "Development comparison and support/failure reporting",
+    "report": "reports/astra-unown-belief-development-repair.md",
+    "implementation": [
+      "scripts/unown_belief_dev/"
+    ],
+    "recomputed_for_export": false,
+    "registration": "experiments/astra-unown-belief-development-repair-003/registration.public.json"
+  },
+  {
+    "run": "astra-unown-belief-rao-blackwellization-001",
+    "title": "Limited Rao-Blackwellized particle filtering",
+    "report": "reports/astra-unown-belief-rao-blackwellization.md",
+    "implementation": [
+      "scripts/unown_belief_rb/"
+    ],
+    "recomputed_for_export": false,
+    "registration": "experiments/astra-unown-belief-rao-blackwellization-001/registration.public.json"
+  },
+  {
+    "run": "astra-unown-belief-bayesian-deck-inference-repair-002",
+    "title": "Bayesian classifier and exact conditional allocation",
+    "report": "reports/astra-unown-belief-bayesian-deck-inference.md",
+    "implementation": [
+      "scripts/unown_belief_bayes_repair/"
+    ],
+    "recomputed_for_export": false,
+    "registration": "experiments/astra-unown-belief-bayesian-deck-inference-repair-002/registration.public.json"
+  },
+  {
+    "run": "astra-unown-belief-learning-dataset-v1-source-repair-005",
+    "title": "Belief dataset and learning curves",
+    "report": "reports/astra-unown-belief-dataset-v1.md",
+    "implementation": [
+      "scripts/unown_belief_learning_source_repair/"
+    ],
+    "recomputed_for_export": false,
+    "registration": "experiments/astra-unown-belief-learning-dataset-v1-source-repair-005/registration.public.json"
+  },
+  {
+    "run": "astra-unown-belief-classifier-full-training-001",
+    "title": "Bayes/GRU/MLP/boosted-tree comparison",
+    "report": "reports/astra-unown-belief-classifier-full-training.md",
+    "implementation": [
+      "scripts/unown_belief_full_training/"
+    ],
+    "recomputed_for_export": false,
+    "registration": "experiments/astra-unown-belief-classifier-full-training-001/registration.public.json"
+  },
+  {
+    "run": "astra-unown-belief-hidden-zone-test-001",
+    "title": "Frozen concealed-card presence/count evaluation",
+    "report": "reports/astra-unown-belief-hidden-zone-brier-test.md",
+    "implementation": [
+      "scripts/unown_belief_zone_test/"
+    ],
+    "recomputed_for_export": false,
+    "registration": "experiments/astra-unown-belief-hidden-zone-test-001/registration.public.json"
+  },
+  {
+    "run": "astra-unown-belief-population-sampling-repair-001",
+    "title": "Population sampling vs loss weighting",
+    "report": "reports/astra-unown-belief-population-sampling-repair.md",
+    "implementation": [
+      "scripts/unown_belief_population_sampling/"
+    ],
+    "recomputed_for_export": false,
+    "registration": "experiments/astra-unown-belief-population-sampling-repair-001/registration.public.json"
+  },
+  {
+    "run": "astra-unown-belief-correction-pooled-evaluation-001",
+    "title": "Saved-data policy-conditioning analysis",
+    "report": "reports/astra-unown-belief-correction-pooled-evaluation.md",
+    "implementation": [
+      "scripts/unown_oracle_pooled/"
+    ],
+    "recomputed_for_export": false,
+    "registration": "experiments/astra-unown-belief-correction-pooled-evaluation-001/registration.public.json"
+  }
+]

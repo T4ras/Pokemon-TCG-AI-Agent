@@ -1,0 +1,31 @@
+{
+  "notice": "Historical scientific registration excerpt, not current compute or submission authorization. Operational authority and private inputs omitted.",
+  "scientific_configuration": {
+    "workers": 4,
+    "official_attempts": 6,
+    "strength_attempts": 288,
+    "total_attempt_cap": 294,
+    "primary": "Unown Gradiant BO3 win rate vsLeague32Hydrapple",
+    "secondary": [
+      "BC34Hydrapple",
+      "G30OceanMix"
+    ],
+    "gate": "Primary estimate>=.60 and whole-match chooser-stratified95% lower>.50 and no correctness/runtime failure",
+    "bootstrap": {
+      "seed": 900006,
+      "replicates": 20000,
+      "unit": "whole match",
+      "strata": "opponent/initial chooser",
+      "point": "equal chooser weights",
+      "draws": "nonwins",
+      "first_games": "same match resampling, valid first game retained after later failure",
+      "pairing": "independent native deals, never paired"
+    },
+    "retention": "All compact outcomes; candidate legal histories from six checks only, fixed recorded prefix parity; first3 failure details/signature up to1MiB each and256MiB total; no all-success visualizations persisted",
+    "GPU_seconds": 0,
+    "training_steps": 0,
+    "seed": 900007,
+    "CPU_only": true,
+    "CPU_scope": "Measured process CPU for program children/workers; early model/metadata probes and human/model development CPU are unavailable, not zero. Wall clock includes all preparation."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "notice": "Historical scientific registration excerpt, not current compute or submission authorization. Operational authority and private inputs omitted.",
+  "scientific_configuration": {
+    "status": "REGISTERED",
+    "purpose": "Technical end-to-end N=4 K=1 Kaggle GPU BC/PPO pilot, not a promotion experiment",
+    "config": {
+      "seed": 904090,
+      "demonstrators": 4,
+      "learners": 1,
+      "runtime_seconds": 3000,
+      "bc_epochs": 3,
+      "bc_seconds": 750,
+      "specialist_seconds": 120,
+      "batch_sequences": 8,
+      "accumulation": 4,
+      "evaluation_bo3_per_opponent": 2,
+      "ppo_cohorts": 1,
+      "minimum_ppo_seconds": 300,
+      "rollout_cap_decisions": 32768,
+      "match_seconds": 120
+    },
+    "evaluation": "Two chooser-balanced BO3 per learned opponent before/after PPO; insufficient for strength claims"
+  }
+}

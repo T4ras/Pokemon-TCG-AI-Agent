@@ -1,0 +1,8 @@
+{
+  "notice": "Historical scientific registration excerpt, not current compute or submission authorization. Operational authority and private inputs omitted.",
+  "scientific_configuration": {
+    "scope": "CPU-only observer belief validation, correctness-gated",
+    "training": false,
+    "run": "astra-unown-belief-native-validation-002"
+  }
+}

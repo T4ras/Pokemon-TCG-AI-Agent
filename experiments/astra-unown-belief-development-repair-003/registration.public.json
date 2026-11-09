@@ -1,0 +1,20 @@
+{
+  "notice": "Historical scientific registration excerpt, not current compute or submission authorization. Operational authority and private inputs omitted.",
+  "scientific_configuration": {
+    "run": "astra-unown-belief-development-repair-003",
+    "scoring": "Same query labels, categories, chooser/list-balanced scores,n/100,n/82,20000 paired whole BO3 bootstraps; exploratory development only",
+    "limits": {
+      "workers": 4,
+      "torch_threads": 1,
+      "corpus_bytes": 8589934592,
+      "details_bytes": 2147483648,
+      "GPU": 0,
+      "training": 0,
+      "uploads": 0,
+      "submissions": 0,
+      "paid_model_API": 0,
+      "power_changes": false,
+      "sleep_inhibition": false
+    }
+  }
+}

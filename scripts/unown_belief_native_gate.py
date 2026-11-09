@@ -1,0 +1,9 @@
+"""Registered practical research gate; no automatic training authorization."""
+from unown_belief_native_common import *
+import numpy as np
+
+def assess(records,analysis,stability):
+ pt=analysis['point']['full_field'];ci=analysis['CI95']['full_field'];a='all_in/uncertain/A_minus_Full_brier';b='all_in/uncertain/B_plus_fallback_minus_Full_brier';timings=[v for r in records for v in r.get('meaningful_update_with_readout_samples',[])];rec=[v['elapsed_seconds'] for r in records for v in r.get('recoveries',[])];lat=float(np.quantile(timings,.95)) if timings else None;r95=float(np.quantile(rec,.95)) if rec else 0.;rss=max((r.get('incremental_RSS_MiB',float('inf')) for r in records),default=float('inf'))
+ checks=dict(correctness=all(r['status']=='DONE' for r in records) and len(records)==592,held_out_supported_90pct=pt.get('coverage/full_supported',0)>=.9,uncertain_A_gain_005=pt.get(a,-1)>=.005 and ci.get(a,[-1])[0]>0,uncertain_B_location_gain=pt.get(b,-1)>0 and ci.get(b,[-1])[0]>0,ECE_05=pt.get('all_in/all/Full_plus_fallback/ECE',1)<=.05,stability_02=stability.get('mean_absolute_probability_discrepancy',1)<=.02,update_p95_50ms=lat is not None and lat<=.05,reconstruction_p95_1s=r95<=1,incremental_RSS_512MiB=rss<=512,full_population_uncertain_coverage=analysis['population_weight_coverage']['full_field'].get('all_in/uncertain/A/brier',0)>=1-1e-9)
+ passed=all(checks.values());recommendation='Proceed only to a separately registered PPO research experiment; no training is authorized automatically.' if passed else 'Repair guided reconstruction and event support before PPO.' if not checks['held_out_supported_90pct'] else 'Simplify to BaselineA; no sufficiently supported location-feature gain is established.'
+ return dict(at_utc=iso(),passed=passed,checks=checks,update_p95_seconds=lat,reconstruction_p95_seconds=r95,max_incremental_RSS_MiB=rss,recommendation=recommendation,automatic_training=False)

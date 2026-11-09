@@ -1,0 +1,8 @@
+{
+  "notice": "Historical scientific registration excerpt, not current compute or submission authorization. Operational authority and private inputs omitted.",
+  "scientific_configuration": {
+    "run": "astra-unown-belief-learning-dataset-v1-source-repair-005",
+    "scope": "Versioned primary/auxiliary dataset and fixed validation learning curves; original actor frozen",
+    "failure_policy": "Stop material correctness errors; preserve raw committed/inflight/failed intents and recoverable fits; never replace native failures or count incomplete fits as scientific negatives"
+  }
+}

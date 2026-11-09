@@ -1,0 +1,113 @@
+{
+  "notice": "Historical scientific registration excerpt, not current compute or submission authorization. Operational authority and private inputs omitted.",
+  "scientific_configuration": {
+    "run": "astra-unown-belief-bayesian-deck-inference-repair-002",
+    "scope": "All296 existing development BO3 histories only",
+    "library_lists": 37,
+    "cards_per_deck": 60,
+    "outer_folds": 4,
+    "outer_training_histories_per_list": 6,
+    "outer_excluded_histories_per_list": 2,
+    "inner_folds": 3,
+    "inner_training_histories_per_list": 4,
+    "inner_excluded_histories_per_list": 2,
+    "grid": {
+      "alpha": [
+        30,
+        120
+      ],
+      "beta": [
+        0.25,
+        0.5,
+        1.0
+      ]
+    },
+    "tie_rule": "log loss tolerance1e-12 then lower beta then higher alpha",
+    "inner_selection_objective": "full-field n/100 BO3-averaged deck log loss; equal games and chooser; no outer labels/scores",
+    "training_count": "one final match-scoped reveal lower-bound vector per training BO3; no overlapping-prefix training examples",
+    "inference_inputs": "certified legal copy lower bounds, current hard facts, fixed library/prevalence; no scheduled identity, hidden labels, results, scores, behavioral features or policy actions",
+    "theta": "(training revealed count+alpha*deck copies/60)/(total training revealed count+alpha)",
+    "log_weights": "log(prior)+beta*sum(lower_bound*log(theta)); hard shared allocation compatibility then stable normalization",
+    "methods": [
+      "A: same conditional allocation with compatibility-filtered prevalence, beta0",
+      "B: same conditional allocation with inner-selected Bayesian weights",
+      "known-deck diagnostic: scorer-only true-deck conditional output; not deployable or an upper bound"
+    ],
+    "feature_schema": [
+      "P(additional unknown copy in hand)",
+      "unknown-hand mean; total-hand mean adds certified known count",
+      "draw-pile mean",
+      "prize mean",
+      "hand count variance",
+      "draw-pile count variance",
+      "prize count variance"
+    ],
+    "variance": "within conditional component + between component/deck mean variance",
+    "remaining_composition": "MAE over full library vocabulary of inferred original copies minus certified revealed-copy lower bound versus true remaining copies",
+    "scoring": {
+      "query_sha256": "[artifact fingerprint omitted]",
+      "selected_decisions": 17029,
+      "uncertain_A_interval": [
+        0.1,
+        0.9
+      ],
+      "aggregation": "queries→decisions→games→BO3→equal chooser→n/82 or n/100",
+      "primary": "eligible-pool uncertain-hand Brier",
+      "paired_difference": "candidate minus A",
+      "bootstrap_replicates": 20000,
+      "bootstrap_seed": 900001,
+      "bootstrap_unit": "whole BO3 resampling within list/chooser with common sampled indices for all methods",
+      "interval_limitation": "conditions on fitted CV models; retraining uncertainty not fully captured",
+      "exploratory_development": true,
+      "primary_population_claim_requires_complete_coverage": true,
+      "practical_Brier_gain_reference": 0.005
+    },
+    "shared_repairs": {
+      "before_comparative_scoring": true,
+      "repairs": [
+        "Metang86 Metal Maker: LookDeck4, SelectAttachTo targetLooking, AttachFromEach, bottom-return remainder; source L while verified segment active",
+        "Dwebble344 Ascension attack478: evolves from deck then shuffles; evolution source D"
+      ],
+      "same_shared_code_for_all_methods": true,
+      "first_gate_preserved": "shared-gate-attempts/001",
+      "SDK_CardImpl_sha256": "[artifact fingerprint omitted]"
+    },
+    "shared_gate": {
+      "expected": 296,
+      "attempted": 296,
+      "completed": 296,
+      "failed": 0,
+      "compiler_unsupported": 11,
+      "failure_signatures": {},
+      "CPU_seconds": 242.2011142650001,
+      "elapsed_seconds": 60.599648,
+      "new_native_matches": 0,
+      "held_out_accessed": false,
+      "comparative_scores_examined": false
+    },
+    "limits": {
+      "CPU_core_seconds": 25782.590625,
+      "elapsed_seconds": 28800,
+      "workers": 4,
+      "compute_threads": 1,
+      "worker_address_space_bytes": 1073741824,
+      "update_CPU_guard_seconds": 30,
+      "allocation_or_mixture_CPU_guard_seconds": 10,
+      "exact_enumeration_nodes": 4096,
+      "private_output_bytes": 2147483648,
+      "finalization_reserve_seconds": 180,
+      "GPU": 0,
+      "neural_training": 0,
+      "PPO": 0,
+      "new_native_matches": 0,
+      "held_out_accessed": false,
+      "uploads": 0,
+      "submissions": 0,
+      "paid_model_API": 0,
+      "cumulative_CPU_core_seconds": 28800,
+      "no_elapsed_extension": true
+    },
+    "failure_policy": "Shared runtime guards stop with FAILED_RUNTIME and cancelled-worker diagnostics; shared correctness or equivalence failure stops before comparative scoring. Preserve all failed/inflight work; no automatic retries or replacements.",
+    "statistical_protocol_unchanged": true
+  }
+}

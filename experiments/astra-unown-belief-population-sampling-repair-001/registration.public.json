@@ -1,0 +1,25 @@
+{
+  "notice": "Historical scientific registration excerpt, not current compute or submission authorization. Operational authority and private inputs omitted.",
+  "scientific_configuration": {
+    "state": "REGISTERED_BEFORE_TRAINING",
+    "question": "Does population-based match sampling improve deck-head learning versus uniform permutations plus importance-weighted per-BO3 losses?",
+    "primary": "Full-field n/100 validation deckNLL at14004: population minusmatchedcontrol, eachseed andmeanofseedmetrics.",
+    "secondary": "Validation deckaccuracy; countNLL perzone andaggregate; allcard/uncertainpresenceBrier perzone; combinedobjective; all original support/countconsistency; fullfieldn/100 andpassing30 n/82. Stationarytraining deckNLL underfullfield andrawcollection weights at0and14004.",
+    "analysis": {
+      "bootstrap_replicates": 10000,
+      "seed": 900003,
+      "unit": "Paired wholeBO3 resampling within37deck×2chooser strata; shared draws acrossarms/checkpoints/seeds.",
+      "interval": "Percentile95%; conditional onfourfittedmodels, does notcapture fulltrainingseeduncertainty.",
+      "seedmean": "Meanmetrics withinBO3; noensemble andseeds notindependentmatches.",
+      "interpretation": "Distinguish gainversuscontrol, gainversusinitialization/A, andpreservationofhiddenzones. Lessregression isoptimizationevidence, notsuccessfulreplacement. Conflictingseedsorinconclusiveintervals remaininconclusive."
+    },
+    "limits": {
+      "CPU_seconds": 14400,
+      "elapsed_seconds": 21600,
+      "total_compute_threads": 4,
+      "private_bytes": 2147483648
+    },
+    "new_native_matches": 0,
+    "GPU_seconds": 0
+  }
+}

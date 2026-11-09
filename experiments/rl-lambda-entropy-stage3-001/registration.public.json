@@ -1,0 +1,20 @@
+{
+  "notice": "Historical scientific registration excerpt, not current compute or submission authorization. Operational authority and private inputs omitted.",
+  "scientific_configuration": {
+    "seed": 904091,
+    "actor_lr": 3e-05,
+    "critic_lr": 0.0001,
+    "ppo_epochs": 2,
+    "gamma": 1.0,
+    "sequence_length": 32,
+    "burn_in": 8,
+    "objective": "game",
+    "run_id": "rl-lambda-entropy-stage3-001",
+    "rounds": 30,
+    "native_rng_seeded": false,
+    "interval_method": "Pointwise equal-chooser Wilson-MOVER95%; draws remain in denominator",
+    "chooser_protocol": "32/32 training;100/100 progress evaluation;300/300 final evaluation; legal policy chooses starter",
+    "inference_protocol": "Same policy within BO3; legal deck facts only cross games; game recurrent state resets",
+    "checkpoint_protocol": "Every complete round: model/optimizer/Python/Torch/CUDA RNG; bounded active-rollout recovery"
+  }
+}

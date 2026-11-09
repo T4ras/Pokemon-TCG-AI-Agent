@@ -1,0 +1,77 @@
+{
+  "notice": "Historical scientific registration excerpt, not current compute or submission authorization. Operational authority and private inputs omitted.",
+  "scientific_configuration": {
+    "run": "astra-unown-corrected-hydrapple-ppo-6h-001",
+    "question": "Can PPO improve corrected Unown against a frozen equally strong corrected initialization?",
+    "recipe": {
+      "lr": 1e-05,
+      "constant": true,
+      "scheduler": null,
+      "betas": [
+        0.95,
+        0.999
+      ],
+      "epsilon": 1e-08,
+      "weight_decay": 0,
+      "PPO_epochs": 1,
+      "logical_minibatch": 128,
+      "remainder": "Actual size mean",
+      "gamma": 1.0,
+      "GAE_lambda": 0.95,
+      "PPO_clip": 0.2,
+      "blind_value_coefficient": 2.0,
+      "entropy_coefficient": 0.01,
+      "gradient_clip": 1.5,
+      "oracle_auxiliary_losses": false,
+      "text_static_tables_fixed": true
+    },
+    "rollout": {
+      "cohort_BO3": 16,
+      "initial_chooser_counts": [
+        8,
+        8
+      ],
+      "shuffle": "np.default_rng(SEED+phase).shuffle([0]*8+[1]*8)",
+      "schedule_seed": 900005,
+      "collection": "Fresh on-policy cohort after each optimizer epoch or phase stop; no old-semantics experience",
+      "partial": "Save/report uncompleted final cohort and chooser allocation; never optimize an incomplete cohort"
+    },
+    "stopping": {
+      "phase_pre_KL": 0.02,
+      "phase_post_KL": 0.03,
+      "post_rejection": "Persist diagnostics,exact full-state rollback,retain earlier committed updates",
+      "phase_stop": "End optimization of that rollout,discard remaining optimization work,collect fresh cohort",
+      "run_zero_cohorts": 3,
+      "numerical_correctness": "Abort whole run with evidence",
+      "initialization_KL": "Diagnostic only; NO cumulative stop or anchor loss",
+      "endpoint": "Final committed state at first time,3-zero-cohort or correctness stop; no intermediate selection"
+    },
+    "diagnostic": {
+      "max_states": 1024,
+      "selection": "All preselected retained broad BO3 actor histories,legally replayed with corrected encoding; round-robin seeded shuffle over(initial chooser,actor seat,game) strata; stop1024,freeze packet hashes before training",
+      "reference": "Recompute full corrected-initialization distributions on the actual backend; not rollout likelihood rebasing",
+      "cadence": "Startup,approximately hourly at cohort boundaries,endpoint",
+      "report": "Mean,p95,p99,max KL,greedy agreement,TV,entropy;no threshold"
+    },
+    "evaluation": {
+      "checkpoints": [
+        "corrected initialization",
+        "final committed"
+      ],
+      "opponent": "Frozen corrected initialization,greedy",
+      "BO3_per_checkpoint": 256,
+      "initial_chooser_per_checkpoint": [
+        128,
+        128
+      ],
+      "seeds": 900005,
+      "primary": "Final-minus-initial equal-chooser BO3 win rate",
+      "CI95": "20000 independent whole-match bootstrap within checkpoint/chooser strata, plus simultaneous exact CP conservative bound over4 constituent strata (98.75% stratum intervals); degenerate bootstrap flagged, never certainty",
+      "secondary": "First-game WDL/chooser; game2/3,starters and conversion descriptive; valid first games retained after later failure",
+      "skip": "No accepted surviving update or identical final/initial tensors => no retained model change; correctness failures invalidate strength run",
+      "no_intermediate_selection": true,
+      "no_sample_extension": true
+    },
+    "retention": "Compact every native attempt/update,rollout phase stops and failures;atomic latest checkpoint per accepted update,current phase input/rollout,first/last rollout,rolling rejected snapshot and compact every rejection,hourly recovery checkpoints. Full legal histories:2 CPU compatibility,first2 matches phase0/16,and first2 perchooser per evaluated checkpoint;512MiB legal-history cap;2GiB private recovery/detail cap excluding immutable input/cold archives. No raw observations in private upload."
+  }
+}

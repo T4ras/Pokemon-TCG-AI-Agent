@@ -1,0 +1,9 @@
+{
+  "notice": "Historical scientific registration excerpt, not current compute or submission authorization. Operational authority and private inputs omitted.",
+  "scientific_configuration": {
+    "GPU_seconds": 0,
+    "objective": "User-requested post-hoc pooling of196completed primaryBO3 with1440complete replicationBO3",
+    "training": false,
+    "uncertainty": "20000whole-match bootstrap draws within agent/opponent/chooser cells, policies independently resampled; retain shared original baseline draws across contrasts; same percentile/Wilson-MOVER envelope as original analyses."
+  }
+}

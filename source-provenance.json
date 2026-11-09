@@ -1,0 +1,1535 @@
+{
+  "notice": "Repository-relative origins only. Public copies sanitize local/account strings. Algorithms are retained; Windows-specific root selection is made repository-relative in common modules. No private asset manifests exported.",
+  "files": [
+    {
+      "file": "scripts/belief_rb_shared.py",
+      "source": "scripts/belief_rb_shared.py"
+    },
+    {
+      "file": "scripts/experiment_supervisor/__init__.py",
+      "source": "scripts/experiment_supervisor/__init__.py"
+    },
+    {
+      "file": "scripts/experiment_supervisor/boundary.py",
+      "source": "scripts/experiment_supervisor/boundary.py"
+    },
+    {
+      "file": "scripts/experiment_supervisor/integration.py",
+      "source": "scripts/experiment_supervisor/integration.py"
+    },
+    {
+      "file": "scripts/experiment_supervisor/io.py",
+      "source": "scripts/experiment_supervisor/io.py"
+    },
+    {
+      "file": "scripts/experiment_supervisor/runner_hook.py",
+      "source": "scripts/experiment_supervisor/runner_hook.py"
+    },
+    {
+      "file": "scripts/hydrapple_submission_common.py",
+      "source": "scripts/hydrapple_submission_common.py"
+    },
+    {
+      "file": "scripts/hydrapple_submission_network.py",
+      "source": "scripts/hydrapple_submission_network.py"
+    },
+    {
+      "file": "scripts/unown_actor.py",
+      "source": "scripts/unown_actor.py"
+    },
+    {
+      "file": "scripts/unown_batched_common.py",
+      "source": "scripts/unown_batched_common.py"
+    },
+    {
+      "file": "scripts/unown_batched_core.py",
+      "source": "scripts/unown_batched_core.py"
+    },
+    {
+      "file": "scripts/unown_batched_verify.py",
+      "source": "scripts/unown_batched_verify.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes/__init__.py",
+      "source": "scripts/unown_belief_bayes/__init__.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes/adapter.py",
+      "source": "scripts/unown_belief_bayes/adapter.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes/allocation.py",
+      "source": "scripts/unown_belief_bayes/allocation.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes/analysis.py",
+      "source": "scripts/unown_belief_bayes/analysis.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes/baseline.py",
+      "source": "scripts/unown_belief_bayes/baseline.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes/cache.py",
+      "source": "scripts/unown_belief_bayes/cache.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes/common.py",
+      "source": "scripts/unown_belief_bayes/common.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes/cv.py",
+      "source": "scripts/unown_belief_bayes/cv.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes/deck.py",
+      "source": "scripts/unown_belief_bayes/deck.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes/evaluate.py",
+      "source": "scripts/unown_belief_bayes/evaluate.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes/locations.py",
+      "source": "scripts/unown_belief_bayes/locations.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes/owner.py",
+      "source": "scripts/unown_belief_bayes/owner.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes/provenance.py",
+      "source": "scripts/unown_belief_bayes/provenance.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes/report.py",
+      "source": "scripts/unown_belief_bayes/report.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes/run.py",
+      "source": "scripts/unown_belief_bayes/run.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes/scoring.py",
+      "source": "scripts/unown_belief_bayes/scoring.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes/validate.py",
+      "source": "scripts/unown_belief_bayes/validate.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes_repair/__init__.py",
+      "source": "scripts/unown_belief_bayes_repair/__init__.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes_repair/adapter.py",
+      "source": "scripts/unown_belief_bayes_repair/adapter.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes_repair/allocation.py",
+      "source": "scripts/unown_belief_bayes_repair/allocation.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes_repair/analysis.py",
+      "source": "scripts/unown_belief_bayes_repair/analysis.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes_repair/baseline.py",
+      "source": "scripts/unown_belief_bayes_repair/baseline.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes_repair/cache.py",
+      "source": "scripts/unown_belief_bayes_repair/cache.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes_repair/common.py",
+      "source": "scripts/unown_belief_bayes_repair/common.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes_repair/cv.py",
+      "source": "scripts/unown_belief_bayes_repair/cv.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes_repair/deck.py",
+      "source": "scripts/unown_belief_bayes_repair/deck.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes_repair/evaluate.py",
+      "source": "scripts/unown_belief_bayes_repair/evaluate.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes_repair/locations.py",
+      "source": "scripts/unown_belief_bayes_repair/locations.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes_repair/owner.py",
+      "source": "scripts/unown_belief_bayes_repair/owner.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes_repair/provenance.py",
+      "source": "scripts/unown_belief_bayes_repair/provenance.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes_repair/report.py",
+      "source": "scripts/unown_belief_bayes_repair/report.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes_repair/run.py",
+      "source": "scripts/unown_belief_bayes_repair/run.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes_repair/scoring.py",
+      "source": "scripts/unown_belief_bayes_repair/scoring.py"
+    },
+    {
+      "file": "scripts/unown_belief_bayes_repair/validate.py",
+      "source": "scripts/unown_belief_bayes_repair/validate.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction/__init__.py",
+      "source": "scripts/unown_belief_correction/__init__.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction/belief.py",
+      "source": "scripts/unown_belief_correction/belief.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction/common.py",
+      "source": "scripts/unown_belief_correction/common.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction/correction.py",
+      "source": "scripts/unown_belief_correction/correction.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction/finalize.py",
+      "source": "scripts/unown_belief_correction/finalize.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction/forecast.py",
+      "source": "scripts/unown_belief_correction/forecast.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction/integration.py",
+      "source": "scripts/unown_belief_correction/integration.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction/preflight.py",
+      "source": "scripts/unown_belief_correction/preflight.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction/readiness.py",
+      "source": "scripts/unown_belief_correction/readiness.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction/report.py",
+      "source": "scripts/unown_belief_correction/report.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/__init__.py",
+      "source": "scripts/unown_belief_correction_reference/__init__.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/audit.py",
+      "source": "scripts/unown_belief_correction_reference/audit.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/audit_exact.py",
+      "source": "scripts/unown_belief_correction_reference/audit_exact.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/bundle.py",
+      "source": "scripts/unown_belief_correction_reference/bundle.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/cache.py",
+      "source": "scripts/unown_belief_correction_reference/cache.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/cloud_profile.py",
+      "source": "scripts/unown_belief_correction_reference/cloud_profile.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/common.py",
+      "source": "scripts/unown_belief_correction_reference/common.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/deadline_hooks.py",
+      "source": "scripts/unown_belief_correction_reference/deadline_hooks.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/evaluate.py",
+      "source": "scripts/unown_belief_correction_reference/evaluate.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/math_cache.py",
+      "source": "scripts/unown_belief_correction_reference/math_cache.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/prepare.py",
+      "source": "scripts/unown_belief_correction_reference/prepare.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/probe.py",
+      "source": "scripts/unown_belief_correction_reference/probe.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/recovery_gate.py",
+      "source": "scripts/unown_belief_correction_reference/recovery_gate.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/report.py",
+      "source": "scripts/unown_belief_correction_reference/report.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/runtime.py",
+      "source": "scripts/unown_belief_correction_reference/runtime.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/statistics.py",
+      "source": "scripts/unown_belief_correction_reference/statistics.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/train.py",
+      "source": "scripts/unown_belief_correction_reference/train.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_reference/validation.py",
+      "source": "scripts/unown_belief_correction_reference/validation.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_retry/__init__.py",
+      "source": "scripts/unown_belief_correction_retry/__init__.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_retry/common.py",
+      "source": "scripts/unown_belief_correction_retry/common.py"
+    },
+    {
+      "file": "scripts/unown_belief_correction_retry/runtime.py",
+      "source": "scripts/unown_belief_correction_retry/runtime.py"
+    },
+    {
+      "file": "scripts/unown_belief_deck_audit/__init__.py",
+      "source": "scripts/unown_belief_deck_audit/__init__.py"
+    },
+    {
+      "file": "scripts/unown_belief_deck_audit/common.py",
+      "source": "scripts/unown_belief_deck_audit/common.py"
+    },
+    {
+      "file": "scripts/unown_belief_deck_audit/diagnostics.py",
+      "source": "scripts/unown_belief_deck_audit/diagnostics.py"
+    },
+    {
+      "file": "scripts/unown_belief_deployment_guard.py",
+      "source": "scripts/unown_belief_deployment_guard.py"
+    },
+    {
+      "file": "scripts/unown_belief_dev/__init__.py",
+      "source": "scripts/unown_belief_dev/__init__.py"
+    },
+    {
+      "file": "scripts/unown_belief_dev/adapter.py",
+      "source": "scripts/unown_belief_dev/adapter.py"
+    },
+    {
+      "file": "scripts/unown_belief_dev/baseline.py",
+      "source": "scripts/unown_belief_dev/baseline.py"
+    },
+    {
+      "file": "scripts/unown_belief_dev/common.py",
+      "source": "scripts/unown_belief_dev/common.py"
+    },
+    {
+      "file": "scripts/unown_belief_dev/corpus.py",
+      "source": "scripts/unown_belief_dev/corpus.py"
+    },
+    {
+      "file": "scripts/unown_belief_dev/filter.py",
+      "source": "scripts/unown_belief_dev/filter.py"
+    },
+    {
+      "file": "scripts/unown_belief_dev/locations.py",
+      "source": "scripts/unown_belief_dev/locations.py"
+    },
+    {
+      "file": "scripts/unown_belief_dev/owner.py",
+      "source": "scripts/unown_belief_dev/owner.py"
+    },
+    {
+      "file": "scripts/unown_belief_dev/proposal.py",
+      "source": "scripts/unown_belief_dev/proposal.py"
+    },
+    {
+      "file": "scripts/unown_belief_dev/report.py",
+      "source": "scripts/unown_belief_dev/report.py"
+    },
+    {
+      "file": "scripts/unown_belief_dev/run.py",
+      "source": "scripts/unown_belief_dev/run.py"
+    },
+    {
+      "file": "scripts/unown_belief_dev/scoring.py",
+      "source": "scripts/unown_belief_dev/scoring.py"
+    },
+    {
+      "file": "scripts/unown_belief_dev/state.py",
+      "source": "scripts/unown_belief_dev/state.py"
+    },
+    {
+      "file": "scripts/unown_belief_dev/truth.py",
+      "source": "scripts/unown_belief_dev/truth.py"
+    },
+    {
+      "file": "scripts/unown_belief_dev/worker.py",
+      "source": "scripts/unown_belief_dev/worker.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/__init__.py",
+      "source": "scripts/unown_belief_full_training/__init__.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/allocation.py",
+      "source": "scripts/unown_belief_full_training/allocation.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/analysis.py",
+      "source": "scripts/unown_belief_full_training/analysis.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/audit.py",
+      "source": "scripts/unown_belief_full_training/audit.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/baseline.py",
+      "source": "scripts/unown_belief_full_training/baseline.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/common.py",
+      "source": "scripts/unown_belief_full_training/common.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/distributions.py",
+      "source": "scripts/unown_belief_full_training/distributions.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/features.py",
+      "source": "scripts/unown_belief_full_training/features.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/fit.py",
+      "source": "scripts/unown_belief_full_training/fit.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/models.py",
+      "source": "scripts/unown_belief_full_training/models.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/owner.py",
+      "source": "scripts/unown_belief_full_training/owner.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/prepare_full.py",
+      "source": "scripts/unown_belief_full_training/prepare_full.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/preprocess.py",
+      "source": "scripts/unown_belief_full_training/preprocess.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/report_full.py",
+      "source": "scripts/unown_belief_full_training/report_full.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/run.py",
+      "source": "scripts/unown_belief_full_training/run.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/scoring.py",
+      "source": "scripts/unown_belief_full_training/scoring.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/storage.py",
+      "source": "scripts/unown_belief_full_training/storage.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/timing.py",
+      "source": "scripts/unown_belief_full_training/timing.py"
+    },
+    {
+      "file": "scripts/unown_belief_full_training/truth.py",
+      "source": "scripts/unown_belief_full_training/truth.py"
+    },
+    {
+      "file": "scripts/unown_belief_hosted_repair_prepare.py",
+      "source": "scripts/unown_belief_hosted_repair_prepare.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/__init__.py",
+      "source": "scripts/unown_belief_learning_source_repair/__init__.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/allocation.py",
+      "source": "scripts/unown_belief_learning_source_repair/allocation.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/analysis.py",
+      "source": "scripts/unown_belief_learning_source_repair/analysis.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/audit.py",
+      "source": "scripts/unown_belief_learning_source_repair/audit.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/baseline.py",
+      "source": "scripts/unown_belief_learning_source_repair/baseline.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/common.py",
+      "source": "scripts/unown_belief_learning_source_repair/common.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/distributions.py",
+      "source": "scripts/unown_belief_learning_source_repair/distributions.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/features.py",
+      "source": "scripts/unown_belief_learning_source_repair/features.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/fit.py",
+      "source": "scripts/unown_belief_learning_source_repair/fit.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/models.py",
+      "source": "scripts/unown_belief_learning_source_repair/models.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/owner.py",
+      "source": "scripts/unown_belief_learning_source_repair/owner.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/prepare.py",
+      "source": "scripts/unown_belief_learning_source_repair/prepare.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/preprocess.py",
+      "source": "scripts/unown_belief_learning_source_repair/preprocess.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/probe.py",
+      "source": "scripts/unown_belief_learning_source_repair/probe.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/reconcile.py",
+      "source": "scripts/unown_belief_learning_source_repair/reconcile.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/recovery_probe.py",
+      "source": "scripts/unown_belief_learning_source_repair/recovery_probe.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/report.py",
+      "source": "scripts/unown_belief_learning_source_repair/report.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/run.py",
+      "source": "scripts/unown_belief_learning_source_repair/run.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/scoring.py",
+      "source": "scripts/unown_belief_learning_source_repair/scoring.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/storage.py",
+      "source": "scripts/unown_belief_learning_source_repair/storage.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/timing.py",
+      "source": "scripts/unown_belief_learning_source_repair/timing.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/truth.py",
+      "source": "scripts/unown_belief_learning_source_repair/truth.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/verify_recovery.py",
+      "source": "scripts/unown_belief_learning_source_repair/verify_recovery.py"
+    },
+    {
+      "file": "scripts/unown_belief_learning_source_repair/worker.py",
+      "source": "scripts/unown_belief_learning_source_repair/worker.py"
+    },
+    {
+      "file": "scripts/unown_belief_native_adapter.py",
+      "source": "scripts/unown_belief_native_adapter.py"
+    },
+    {
+      "file": "scripts/unown_belief_native_baseline.py",
+      "source": "scripts/unown_belief_native_baseline.py"
+    },
+    {
+      "file": "scripts/unown_belief_native_common.py",
+      "source": "scripts/unown_belief_native_common.py"
+    },
+    {
+      "file": "scripts/unown_belief_native_corpus.py",
+      "source": "scripts/unown_belief_native_corpus.py"
+    },
+    {
+      "file": "scripts/unown_belief_native_filter.py",
+      "source": "scripts/unown_belief_native_filter.py"
+    },
+    {
+      "file": "scripts/unown_belief_native_gate.py",
+      "source": "scripts/unown_belief_native_gate.py"
+    },
+    {
+      "file": "scripts/unown_belief_native_proposal.py",
+      "source": "scripts/unown_belief_native_proposal.py"
+    },
+    {
+      "file": "scripts/unown_belief_native_readiness.py",
+      "source": "scripts/unown_belief_native_readiness.py"
+    },
+    {
+      "file": "scripts/unown_belief_native_readiness_report.py",
+      "source": "scripts/unown_belief_native_readiness_report.py"
+    },
+    {
+      "file": "scripts/unown_belief_native_report.py",
+      "source": "scripts/unown_belief_native_report.py"
+    },
+    {
+      "file": "scripts/unown_belief_native_run.py",
+      "source": "scripts/unown_belief_native_run.py"
+    },
+    {
+      "file": "scripts/unown_belief_native_scoring.py",
+      "source": "scripts/unown_belief_native_scoring.py"
+    },
+    {
+      "file": "scripts/unown_belief_native_state.py",
+      "source": "scripts/unown_belief_native_state.py"
+    },
+    {
+      "file": "scripts/unown_belief_native_truth.py",
+      "source": "scripts/unown_belief_native_truth.py"
+    },
+    {
+      "file": "scripts/unown_belief_native_worker.py",
+      "source": "scripts/unown_belief_native_worker.py"
+    },
+    {
+      "file": "scripts/unown_belief_population_sampling/__init__.py",
+      "source": "scripts/unown_belief_population_sampling/__init__.py"
+    },
+    {
+      "file": "scripts/unown_belief_population_sampling/analysis.py",
+      "source": "scripts/unown_belief_population_sampling/analysis.py"
+    },
+    {
+      "file": "scripts/unown_belief_population_sampling/common.py",
+      "source": "scripts/unown_belief_population_sampling/common.py"
+    },
+    {
+      "file": "scripts/unown_belief_population_sampling/metrics.py",
+      "source": "scripts/unown_belief_population_sampling/metrics.py"
+    },
+    {
+      "file": "scripts/unown_belief_population_sampling/owner.py",
+      "source": "scripts/unown_belief_population_sampling/owner.py"
+    },
+    {
+      "file": "scripts/unown_belief_population_sampling/preflight.py",
+      "source": "scripts/unown_belief_population_sampling/preflight.py"
+    },
+    {
+      "file": "scripts/unown_belief_population_sampling/report.py",
+      "source": "scripts/unown_belief_population_sampling/report.py"
+    },
+    {
+      "file": "scripts/unown_belief_population_sampling/run.py",
+      "source": "scripts/unown_belief_population_sampling/run.py"
+    },
+    {
+      "file": "scripts/unown_belief_population_sampling/train.py",
+      "source": "scripts/unown_belief_population_sampling/train.py"
+    },
+    {
+      "file": "scripts/unown_belief_provenance/__init__.py",
+      "source": "scripts/unown_belief_provenance/__init__.py"
+    },
+    {
+      "file": "scripts/unown_belief_provenance/adapter.py",
+      "source": "scripts/unown_belief_provenance/adapter.py"
+    },
+    {
+      "file": "scripts/unown_belief_provenance/baseline.py",
+      "source": "scripts/unown_belief_provenance/baseline.py"
+    },
+    {
+      "file": "scripts/unown_belief_provenance/candidate.py",
+      "source": "scripts/unown_belief_provenance/candidate.py"
+    },
+    {
+      "file": "scripts/unown_belief_provenance/candidate_kernel.py",
+      "source": "scripts/unown_belief_provenance/candidate_kernel.py"
+    },
+    {
+      "file": "scripts/unown_belief_provenance/collapsed.py",
+      "source": "scripts/unown_belief_provenance/collapsed.py"
+    },
+    {
+      "file": "scripts/unown_belief_provenance/common.py",
+      "source": "scripts/unown_belief_provenance/common.py"
+    },
+    {
+      "file": "scripts/unown_belief_provenance/filter.py",
+      "source": "scripts/unown_belief_provenance/filter.py"
+    },
+    {
+      "file": "scripts/unown_belief_provenance/locations.py",
+      "source": "scripts/unown_belief_provenance/locations.py"
+    },
+    {
+      "file": "scripts/unown_belief_provenance/proposal.py",
+      "source": "scripts/unown_belief_provenance/proposal.py"
+    },
+    {
+      "file": "scripts/unown_belief_provenance/provenance.py",
+      "source": "scripts/unown_belief_provenance/provenance.py"
+    },
+    {
+      "file": "scripts/unown_belief_provenance/state.py",
+      "source": "scripts/unown_belief_provenance/state.py"
+    },
+    {
+      "file": "scripts/unown_belief_rb/__init__.py",
+      "source": "scripts/unown_belief_rb/__init__.py"
+    },
+    {
+      "file": "scripts/unown_belief_rb/adapter.py",
+      "source": "scripts/unown_belief_rb/adapter.py"
+    },
+    {
+      "file": "scripts/unown_belief_rb/analysis.py",
+      "source": "scripts/unown_belief_rb/analysis.py"
+    },
+    {
+      "file": "scripts/unown_belief_rb/baseline.py",
+      "source": "scripts/unown_belief_rb/baseline.py"
+    },
+    {
+      "file": "scripts/unown_belief_rb/candidate.py",
+      "source": "scripts/unown_belief_rb/candidate.py"
+    },
+    {
+      "file": "scripts/unown_belief_rb/candidate_kernel.py",
+      "source": "scripts/unown_belief_rb/candidate_kernel.py"
+    },
+    {
+      "file": "scripts/unown_belief_rb/collapsed.py",
+      "source": "scripts/unown_belief_rb/collapsed.py"
+    },
+    {
+      "file": "scripts/unown_belief_rb/common.py",
+      "source": "scripts/unown_belief_rb/common.py"
+    },
+    {
+      "file": "scripts/unown_belief_rb/filter.py",
+      "source": "scripts/unown_belief_rb/filter.py"
+    },
+    {
+      "file": "scripts/unown_belief_rb/locations.py",
+      "source": "scripts/unown_belief_rb/locations.py"
+    },
+    {
+      "file": "scripts/unown_belief_rb/owner.py",
+      "source": "scripts/unown_belief_rb/owner.py"
+    },
+    {
+      "file": "scripts/unown_belief_rb/proposal.py",
+      "source": "scripts/unown_belief_rb/proposal.py"
+    },
+    {
+      "file": "scripts/unown_belief_rb/replay.py",
+      "source": "scripts/unown_belief_rb/replay.py"
+    },
+    {
+      "file": "scripts/unown_belief_rb/report.py",
+      "source": "scripts/unown_belief_rb/report.py"
+    },
+    {
+      "file": "scripts/unown_belief_rb/run.py",
+      "source": "scripts/unown_belief_rb/run.py"
+    },
+    {
+      "file": "scripts/unown_belief_rb/scoring.py",
+      "source": "scripts/unown_belief_rb/scoring.py"
+    },
+    {
+      "file": "scripts/unown_belief_rb/state.py",
+      "source": "scripts/unown_belief_rb/state.py"
+    },
+    {
+      "file": "scripts/unown_belief_zone_test/__init__.py",
+      "source": "scripts/unown_belief_zone_test/__init__.py"
+    },
+    {
+      "file": "scripts/unown_belief_zone_test/analysis.py",
+      "source": "scripts/unown_belief_zone_test/analysis.py"
+    },
+    {
+      "file": "scripts/unown_belief_zone_test/common.py",
+      "source": "scripts/unown_belief_zone_test/common.py"
+    },
+    {
+      "file": "scripts/unown_belief_zone_test/evaluate.py",
+      "source": "scripts/unown_belief_zone_test/evaluate.py"
+    },
+    {
+      "file": "scripts/unown_belief_zone_test/owner.py",
+      "source": "scripts/unown_belief_zone_test/owner.py"
+    },
+    {
+      "file": "scripts/unown_belief_zone_test/preflight.py",
+      "source": "scripts/unown_belief_zone_test/preflight.py"
+    },
+    {
+      "file": "scripts/unown_belief_zone_test/report.py",
+      "source": "scripts/unown_belief_zone_test/report.py"
+    },
+    {
+      "file": "scripts/unown_belief_zone_test/run.py",
+      "source": "scripts/unown_belief_zone_test/run.py"
+    },
+    {
+      "file": "scripts/unown_benchmark.py",
+      "source": "scripts/unown_benchmark.py"
+    },
+    {
+      "file": "scripts/unown_common.py",
+      "source": "scripts/unown_common.py"
+    },
+    {
+      "file": "scripts/unown_corrected_ppo_bundle.py",
+      "source": "scripts/unown_corrected_ppo_bundle.py"
+    },
+    {
+      "file": "scripts/unown_corrected_ppo_common.py",
+      "source": "scripts/unown_corrected_ppo_common.py"
+    },
+    {
+      "file": "scripts/unown_corrected_ppo_core.py",
+      "source": "scripts/unown_corrected_ppo_core.py"
+    },
+    {
+      "file": "scripts/unown_corrected_ppo_cpu_recovery.py",
+      "source": "scripts/unown_corrected_ppo_cpu_recovery.py"
+    },
+    {
+      "file": "scripts/unown_corrected_ppo_cpu_worker.py",
+      "source": "scripts/unown_corrected_ppo_cpu_worker.py"
+    },
+    {
+      "file": "scripts/unown_corrected_ppo_local.py",
+      "source": "scripts/unown_corrected_ppo_local.py"
+    },
+    {
+      "file": "scripts/unown_corrected_ppo_report.py",
+      "source": "scripts/unown_corrected_ppo_report.py"
+    },
+    {
+      "file": "scripts/unown_corrected_ppo_train.py",
+      "source": "scripts/unown_corrected_ppo_train.py"
+    },
+    {
+      "file": "scripts/unown_cosine_clock.py",
+      "source": "scripts/unown_cosine_clock.py"
+    },
+    {
+      "file": "scripts/unown_cosine_common.py",
+      "source": "scripts/unown_cosine_common.py"
+    },
+    {
+      "file": "scripts/unown_cosine_core.py",
+      "source": "scripts/unown_cosine_core.py"
+    },
+    {
+      "file": "scripts/unown_cosine_eval.py",
+      "source": "scripts/unown_cosine_eval.py"
+    },
+    {
+      "file": "scripts/unown_cosine_failure_detail.py",
+      "source": "scripts/unown_cosine_failure_detail.py"
+    },
+    {
+      "file": "scripts/unown_cosine_train.py",
+      "source": "scripts/unown_cosine_train.py"
+    },
+    {
+      "file": "scripts/unown_embedding/__init__.py",
+      "source": "scripts/unown_embedding/__init__.py"
+    },
+    {
+      "file": "scripts/unown_embedding/benchmark.py",
+      "source": "scripts/unown_embedding/benchmark.py"
+    },
+    {
+      "file": "scripts/unown_embedding/benchmark_authorization.py",
+      "source": "scripts/unown_embedding/benchmark_authorization.py"
+    },
+    {
+      "file": "scripts/unown_embedding/bundle.py",
+      "source": "scripts/unown_embedding/bundle.py"
+    },
+    {
+      "file": "scripts/unown_embedding/common.py",
+      "source": "scripts/unown_embedding/common.py"
+    },
+    {
+      "file": "scripts/unown_embedding/evaluate.py",
+      "source": "scripts/unown_embedding/evaluate.py"
+    },
+    {
+      "file": "scripts/unown_embedding/model.py",
+      "source": "scripts/unown_embedding/model.py"
+    },
+    {
+      "file": "scripts/unown_embedding/prepare.py",
+      "source": "scripts/unown_embedding/prepare.py"
+    },
+    {
+      "file": "scripts/unown_embedding/readiness.py",
+      "source": "scripts/unown_embedding/readiness.py"
+    },
+    {
+      "file": "scripts/unown_embedding/report.py",
+      "source": "scripts/unown_embedding/report.py"
+    },
+    {
+      "file": "scripts/unown_embedding/retry_prepare.py",
+      "source": "scripts/unown_embedding/retry_prepare.py"
+    },
+    {
+      "file": "scripts/unown_embedding/runtime.py",
+      "source": "scripts/unown_embedding/runtime.py"
+    },
+    {
+      "file": "scripts/unown_embedding/statistics.py",
+      "source": "scripts/unown_embedding/statistics.py"
+    },
+    {
+      "file": "scripts/unown_embedding/train.py",
+      "source": "scripts/unown_embedding/train.py"
+    },
+    {
+      "file": "scripts/unown_embedding_continuation/__init__.py",
+      "source": "scripts/unown_embedding_continuation/__init__.py"
+    },
+    {
+      "file": "scripts/unown_embedding_continuation/benchmark.py",
+      "source": "scripts/unown_embedding_continuation/benchmark.py"
+    },
+    {
+      "file": "scripts/unown_embedding_continuation/benchmark_authorization.py",
+      "source": "scripts/unown_embedding_continuation/benchmark_authorization.py"
+    },
+    {
+      "file": "scripts/unown_embedding_continuation/benchmark_summary.py",
+      "source": "scripts/unown_embedding_continuation/benchmark_summary.py"
+    },
+    {
+      "file": "scripts/unown_embedding_continuation/bundle.py",
+      "source": "scripts/unown_embedding_continuation/bundle.py"
+    },
+    {
+      "file": "scripts/unown_embedding_continuation/common.py",
+      "source": "scripts/unown_embedding_continuation/common.py"
+    },
+    {
+      "file": "scripts/unown_embedding_continuation/evaluate.py",
+      "source": "scripts/unown_embedding_continuation/evaluate.py"
+    },
+    {
+      "file": "scripts/unown_embedding_continuation/model.py",
+      "source": "scripts/unown_embedding_continuation/model.py"
+    },
+    {
+      "file": "scripts/unown_embedding_continuation/recovery.py",
+      "source": "scripts/unown_embedding_continuation/recovery.py"
+    },
+    {
+      "file": "scripts/unown_embedding_continuation/report.py",
+      "source": "scripts/unown_embedding_continuation/report.py"
+    },
+    {
+      "file": "scripts/unown_embedding_continuation/runtime.py",
+      "source": "scripts/unown_embedding_continuation/runtime.py"
+    },
+    {
+      "file": "scripts/unown_embedding_continuation/statistics.py",
+      "source": "scripts/unown_embedding_continuation/statistics.py"
+    },
+    {
+      "file": "scripts/unown_embedding_continuation/train.py",
+      "source": "scripts/unown_embedding_continuation/train.py"
+    },
+    {
+      "file": "scripts/unown_oracle_pooled/__init__.py",
+      "source": "scripts/unown_oracle_pooled/__init__.py"
+    },
+    {
+      "file": "scripts/unown_oracle_pooled/common.py",
+      "source": "scripts/unown_oracle_pooled/common.py"
+    },
+    {
+      "file": "scripts/unown_oracle_pooled/run.py",
+      "source": "scripts/unown_oracle_pooled/run.py"
+    },
+    {
+      "file": "scripts/unown_oracle_pooled/statistics.py",
+      "source": "scripts/unown_oracle_pooled/statistics.py"
+    },
+    {
+      "file": "scripts/unown_pilot_common.py",
+      "source": "scripts/unown_pilot_common.py"
+    },
+    {
+      "file": "scripts/unown_pilot_execution.py",
+      "source": "scripts/unown_pilot_execution.py"
+    },
+    {
+      "file": "scripts/unown_pilot_remote.py",
+      "source": "scripts/unown_pilot_remote.py"
+    },
+    {
+      "file": "scripts/unown_pilot_runtime.py",
+      "source": "scripts/unown_pilot_runtime.py"
+    },
+    {
+      "file": "scripts/unown_pilot_training.py",
+      "source": "scripts/unown_pilot_training.py"
+    },
+    {
+      "file": "scripts/unown_pool_migration.py",
+      "source": "scripts/unown_pool_migration.py"
+    },
+    {
+      "file": "scripts/unown_round_benchmark.py",
+      "source": "scripts/unown_round_benchmark.py"
+    },
+    {
+      "file": "scripts/unown_round_common.py",
+      "source": "scripts/unown_round_common.py"
+    },
+    {
+      "file": "scripts/unown_round_core.py",
+      "source": "scripts/unown_round_core.py"
+    },
+    {
+      "file": "scripts/unown_round_lean.py",
+      "source": "scripts/unown_round_lean.py"
+    },
+    {
+      "file": "scripts/unown_runner/__init__.py",
+      "source": "scripts/unown_runner/__init__.py"
+    },
+    {
+      "file": "scripts/unown_runner/compilation.py",
+      "source": "scripts/unown_runner/compilation.py"
+    },
+    {
+      "file": "scripts/unown_runner/compiled_option.py",
+      "source": "scripts/unown_runner/compiled_option.py"
+    },
+    {
+      "file": "scripts/unown_runner/context.py",
+      "source": "scripts/unown_runner/context.py"
+    },
+    {
+      "file": "scripts/unown_runner/owned.py",
+      "source": "scripts/unown_runner/owned.py"
+    },
+    {
+      "file": "scripts/unown_runner/packets.py",
+      "source": "scripts/unown_runner/packets.py"
+    },
+    {
+      "file": "scripts/unown_runner/runner.py",
+      "source": "scripts/unown_runner/runner.py"
+    },
+    {
+      "file": "scripts/unown_runner/runtime.py",
+      "source": "scripts/unown_runner/runtime.py"
+    },
+    {
+      "file": "scripts/unown_stability_common.py",
+      "source": "scripts/unown_stability_common.py"
+    },
+    {
+      "file": "scripts/unown_stability_core.py",
+      "source": "scripts/unown_stability_core.py"
+    },
+    {
+      "file": "scripts/unown_stability_stats.py",
+      "source": "scripts/unown_stability_stats.py"
+    },
+    {
+      "file": "scripts/unown_start_order_actor.py",
+      "source": "scripts/unown_start_order_actor.py"
+    },
+    {
+      "file": "scripts/unown_start_order_common.py",
+      "source": "scripts/unown_start_order_common.py"
+    },
+    {
+      "file": "scripts/unown_train.py",
+      "source": "scripts/unown_train.py"
+    },
+    {
+      "file": "scripts/unown_v2_common.py",
+      "source": "scripts/unown_v2_common.py"
+    },
+    {
+      "file": "scripts/unown_v2_runtime.py",
+      "source": "scripts/unown_v2_runtime.py"
+    },
+    {
+      "file": "scripts/unown_v2_training.py",
+      "source": "scripts/unown_v2_training.py"
+    },
+    {
+      "file": "src/ptcg_agent/__init__.py",
+      "source": "src/ptcg_agent/__init__.py"
+    },
+    {
+      "file": "src/ptcg_agent/arena.py",
+      "source": "src/ptcg_agent/arena.py"
+    },
+    {
+      "file": "src/ptcg_agent/cli.py",
+      "source": "src/ptcg_agent/cli.py"
+    },
+    {
+      "file": "src/ptcg_agent/engine.py",
+      "source": "src/ptcg_agent/engine.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/__init__.py",
+      "source": "src/ptcg_agent/learning/__init__.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/anchor_checks.py",
+      "source": "src/ptcg_agent/learning/anchor_checks.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/benchmark.py",
+      "source": "src/ptcg_agent/learning/benchmark.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/decoder_matrix.py",
+      "source": "src/ptcg_agent/learning/decoder_matrix.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/decoder_matrix_until.py",
+      "source": "src/ptcg_agent/learning/decoder_matrix_until.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/diverse_rl.py",
+      "source": "src/ptcg_agent/learning/diverse_rl.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/economical_collector.py",
+      "source": "src/ptcg_agent/learning/economical_collector.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/full_bc.py",
+      "source": "src/ptcg_agent/learning/full_bc.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/hydrapple_league.py",
+      "source": "src/ptcg_agent/learning/hydrapple_league.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/hydrapple_league_run.py",
+      "source": "src/ptcg_agent/learning/hydrapple_league_run.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/live.py",
+      "source": "src/ptcg_agent/learning/live.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/lr_search.py",
+      "source": "src/ptcg_agent/learning/lr_search.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/model.py",
+      "source": "src/ptcg_agent/learning/model.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/observations.py",
+      "source": "src/ptcg_agent/learning/observations.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/ocean_ablation.py",
+      "source": "src/ptcg_agent/learning/ocean_ablation.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/paired_benchmark.py",
+      "source": "src/ptcg_agent/learning/paired_benchmark.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/phase_comparison.py",
+      "source": "src/ptcg_agent/learning/phase_comparison.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/pilot.py",
+      "source": "src/ptcg_agent/learning/pilot.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/ppo_batch_benchmark.py",
+      "source": "src/ptcg_agent/learning/ppo_batch_benchmark.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/ppo_batched.py",
+      "source": "src/ptcg_agent/learning/ppo_batched.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/recovery_bc.py",
+      "source": "src/ptcg_agent/learning/recovery_bc.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/replays.py",
+      "source": "src/ptcg_agent/learning/replays.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/rl_full.py",
+      "source": "src/ptcg_agent/learning/rl_full.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/rl_stage1.py",
+      "source": "src/ptcg_agent/learning/rl_stage1.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/rl_stage3.py",
+      "source": "src/ptcg_agent/learning/rl_stage3.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/rl_timing.py",
+      "source": "src/ptcg_agent/learning/rl_timing.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/round_robin.py",
+      "source": "src/ptcg_agent/learning/round_robin.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/semantic_pilot.py",
+      "source": "src/ptcg_agent/learning/semantic_pilot.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/semantics.py",
+      "source": "src/ptcg_agent/learning/semantics.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/tactical_search.py",
+      "source": "src/ptcg_agent/learning/tactical_search.py"
+    },
+    {
+      "file": "src/ptcg_agent/learning/training.py",
+      "source": "src/ptcg_agent/learning/training.py"
+    },
+    {
+      "file": "src/ptcg_agent/packaging.py",
+      "source": "src/ptcg_agent/packaging.py"
+    },
+    {
+      "file": "src/ptcg_agent/policies.py",
+      "source": "src/ptcg_agent/policies.py"
+    },
+    {
+      "file": "tests/test_belief_full_training.py",
+      "source": "tests/test_belief_full_training.py"
+    },
+    {
+      "file": "tests/test_belief_learning_source_repair.py",
+      "source": "tests/test_belief_learning_source_repair.py"
+    },
+    {
+      "file": "tests/test_belief_population_sampling.py",
+      "source": "tests/test_belief_population_sampling.py"
+    },
+    {
+      "file": "tests/test_belief_zone_test.py",
+      "source": "tests/test_belief_zone_test.py"
+    },
+    {
+      "file": "tests/test_full_bc.py",
+      "source": "tests/test_full_bc.py"
+    },
+    {
+      "file": "tests/test_learning.py",
+      "source": "tests/test_learning.py"
+    },
+    {
+      "file": "tests/test_numerical_stability.py",
+      "source": "tests/test_numerical_stability.py"
+    },
+    {
+      "file": "tests/test_ppo_batched.py",
+      "source": "tests/test_ppo_batched.py"
+    },
+    {
+      "file": "tests/test_unown_belief_bayes.py",
+      "source": "tests/test_unown_belief_bayes.py"
+    },
+    {
+      "file": "tests/test_unown_belief_bayes_repair.py",
+      "source": "tests/test_unown_belief_bayes_repair.py"
+    },
+    {
+      "file": "tests/test_unown_belief_deployment_guard.py",
+      "source": "tests/test_unown_belief_deployment_guard.py"
+    },
+    {
+      "file": "tests/test_unown_belief_provenance.py",
+      "source": "tests/test_unown_belief_provenance.py"
+    },
+    {
+      "file": "tests/test_unown_belief_rb.py",
+      "source": "tests/test_unown_belief_rb.py"
+    },
+    {
+      "file": "tests/test_unown_compatibility.py",
+      "source": "tests/test_unown_compatibility.py"
+    },
+    {
+      "file": "tests/test_unown_corrected_ppo.py",
+      "source": "tests/test_unown_corrected_ppo.py"
+    },
+    {
+      "file": "tests/test_unown_embedding.py",
+      "source": "tests/test_unown_embedding.py"
+    },
+    {
+      "file": "tests/test_unown_embedding_continuation.py",
+      "source": "tests/test_unown_embedding_continuation.py"
+    },
+    {
+      "file": "models/unown/main.py",
+      "source": "artifacts/unown-model-source-[removed]/main.py"
+    },
+    {
+      "file": "models/unown/ptcg/tracker.py",
+      "source": "artifacts/unown-model-source-[removed]/ptcg/tracker.py"
+    },
+    {
+      "file": "models/unown/ptcg/effects.py",
+      "source": "artifacts/unown-model-source-[removed]/ptcg/effects.py"
+    },
+    {
+      "file": "models/unown/ptcg/__init__.py",
+      "source": "artifacts/unown-model-source-[removed]/ptcg/__init__.py"
+    },
+    {
+      "file": "models/unown/frozen_unown/__init__.py",
+      "source": "artifacts/unown-model-source-[removed]/frozen_unown/__init__.py"
+    },
+    {
+      "file": "models/unown/frozen_unown/packets.py",
+      "source": "artifacts/unown-model-source-[removed]/frozen_unown/packets.py"
+    },
+    {
+      "file": "models/unown/frozen_unown/runtime.py",
+      "source": "artifacts/unown-model-source-[removed]/frozen_unown/runtime.py"
+    },
+    {
+      "file": "models/unown/ptcg/rl/encoder.py",
+      "source": "artifacts/unown-model-source-[removed]/ptcg/rl/encoder.py"
+    },
+    {
+      "file": "models/unown/ptcg/rl/model.py",
+      "source": "artifacts/unown-model-source-[removed]/ptcg/rl/model.py"
+    },
+    {
+      "file": "models/unown/ptcg/rl/__init__.py",
+      "source": "artifacts/unown-model-source-[removed]/ptcg/rl/__init__.py"
+    },
+    {
+      "file": "models/unown/ptcg/rl/cards.py",
+      "source": "artifacts/unown-model-source-[removed]/ptcg/rl/cards.py"
+    },
+    {
+      "file": "models/unown/ptcg/rl/buffers.py",
+      "source": "artifacts/unown-model-source-[removed]/ptcg/rl/buffers.py"
+    },
+    {
+      "file": "models/unown/frozen_unown/units/prefix.py",
+      "source": "artifacts/unown-model-source-[removed]/frozen_unown/units/prefix.py"
+    },
+    {
+      "file": "models/unown/frozen_unown/units/order.py",
+      "source": "artifacts/unown-model-source-[removed]/frozen_unown/units/order.py"
+    },
+    {
+      "file": "models/unown/frozen_unown/units/rt.py",
+      "source": "artifacts/unown-model-source-[removed]/frozen_unown/units/rt.py"
+    },
+    {
+      "file": "models/unown/frozen_unown/units/runtime.py",
+      "source": "artifacts/unown-model-source-[removed]/frozen_unown/units/runtime.py"
+    },
+    {
+      "file": "reports/ml-phase-one.md",
+      "source": "reports/ml-phase-one.md"
+    },
+    {
+      "file": "reports/bc-full-ocean-recovery.md",
+      "source": "reports/bc-full-ocean-recovery.md"
+    },
+    {
+      "file": "reports/bc-lr-search.md",
+      "source": "reports/bc-lr-search.md"
+    },
+    {
+      "file": "reports/rl-lambda-entropy-stage3.md",
+      "source": "reports/rl-lambda-entropy-stage3.md"
+    },
+    {
+      "file": "reports/kaggle-rl-g-round030-argmax.md",
+      "source": "reports/kaggle-rl-g-round030-argmax.md"
+    },
+    {
+      "file": "reports/astra-unown-gradiant-benchmark.md",
+      "source": "reports/astra-unown-gradiant-benchmark.md"
+    },
+    {
+      "file": "reports/astra-unown-initial-hydrapple-submission.md",
+      "source": "reports/astra-unown-initial-hydrapple-submission.md"
+    },
+    {
+      "file": "reports/astra-unown-current-pool-adaptation-local-text.md",
+      "source": "reports/astra-unown-current-pool-adaptation-local-text.md"
+    },
+    {
+      "file": "reports/astra-unown-corrected-hydrapple-ppo-6h.md",
+      "source": "reports/astra-unown-corrected-hydrapple-ppo-6h.md"
+    },
+    {
+      "file": "reports/astra-unown-new-card-embedding-adaptation.md",
+      "source": "reports/astra-unown-new-card-embedding-adaptation.md"
+    },
+    {
+      "file": "reports/astra-unown-new-card-embedding-continuation.md",
+      "source": "reports/astra-unown-new-card-embedding-continuation.md"
+    },
+    {
+      "file": "reports/astra-unown-belief-native-observer-readiness.md",
+      "source": "reports/astra-unown-belief-native-observer-readiness.md"
+    },
+    {
+      "file": "reports/astra-unown-belief-tracker-validation.md",
+      "source": "reports/astra-unown-belief-tracker-validation.md"
+    },
+    {
+      "file": "reports/astra-unown-belief-provenance-repair.md",
+      "source": "reports/astra-unown-belief-provenance-repair.md"
+    },
+    {
+      "file": "reports/astra-unown-belief-development-repair.md",
+      "source": "reports/astra-unown-belief-development-repair.md"
+    },
+    {
+      "file": "reports/astra-unown-belief-rao-blackwellization.md",
+      "source": "reports/astra-unown-belief-rao-blackwellization.md"
+    },
+    {
+      "file": "reports/astra-unown-belief-bayesian-deck-inference.md",
+      "source": "reports/astra-unown-belief-bayesian-deck-inference.md"
+    },
+    {
+      "file": "reports/astra-unown-belief-dataset-v1.md",
+      "source": "reports/astra-unown-belief-dataset-v1.md"
+    },
+    {
+      "file": "reports/astra-unown-belief-classifier-learning-curves.md",
+      "source": "reports/astra-unown-belief-classifier-learning-curves.md"
+    },
+    {
+      "file": "reports/astra-unown-belief-classifier-full-training.md",
+      "source": "reports/astra-unown-belief-classifier-full-training.md"
+    },
+    {
+      "file": "reports/astra-unown-belief-hidden-zone-brier-test.md",
+      "source": "reports/astra-unown-belief-hidden-zone-brier-test.md"
+    },
+    {
+      "file": "reports/astra-unown-belief-population-sampling-repair.md",
+      "source": "reports/astra-unown-belief-population-sampling-repair.md"
+    },
+    {
+      "file": "reports/astra-unown-belief-correction-ppo-pilot.md",
+      "source": "reports/astra-unown-belief-correction-ppo-pilot.md"
+    },
+    {
+      "file": "reports/astra-unown-belief-correction-cpu-replication.md",
+      "source": "reports/astra-unown-belief-correction-cpu-replication.md"
+    },
+    {
+      "file": "reports/astra-unown-belief-correction-pooled-evaluation.md",
+      "source": "reports/astra-unown-belief-correction-pooled-evaluation.md"
+    },
+    {
+      "file": "reports/astra-unown-belief-submission-catalogue-repair.md",
+      "source": "reports/astra-unown-belief-submission-catalogue-repair.md"
+    },
+    {
+      "file": "docs/EXPERIMENT_SPECIFICATIONS.md",
+      "source": "docs/EXPERIMENT_SPECIFICATIONS.md"
+    }
+  ],
+  "synthetic_test_extractions": {
+    "tests/review/test_particle_exact.py": {
+      "source": "tests/test_unown_belief_rb.py",
+      "functions": [
+        "move",
+        "draw",
+        "states",
+        "exact",
+        "test_exact_hand_deck_prize_random_allocation",
+        "test_available_play_preserves_history_beyond_baseline_A",
+        "test_search_is_availability_not_random_card_likelihood",
+        "test_deck_hypothesis_evidence_exact",
+        "test_opening_basic_predicate_exact",
+        "test_weight_by_conditional_availability_then_move",
+        "test_known_top_bottom_and_partial_return",
+        "test_pinned_order_exact_identity_likelihood",
+        "test_conditional_materialization_retains_serials_and_order",
+        "test_materialization_distribution_and_total_variance",
+        "test_counted_random_matches_exact_underlying_MT_tape"
+      ]
+    },
+    "tests/review/test_bayes_exact.py": {
+      "source": "tests/test_unown_belief_bayes_repair.py",
+      "functions": [
+        "test_theta_matches_registered_formula_and_no_labelled_impossible_card",
+        "test_weight_beta_zero_and_stable_large_ledger",
+        "test_total_variance_includes_both_terms"
+      ]
+    },
+    "tests/review/test_hidden_zone_metrics.py": {
+      "source": "tests/test_belief_zone_test.py",
+      "functions": [
+        "fixture",
+        "test_zone_presence_and_multiclass_definitions",
+        "test_known_hand_clamps_actual_presence",
+        "test_uncertain_filter_uses_baseline_not_model",
+        "test_invalid_model_distribution_rejected",
+        "test_equal_game_not_equal_decision_weights"
+      ]
+    }
+  },
+  "temporal_sanitization": "Dates, timestamps and calendar-derived seed values removed/anonymized. Original temporal data and alias mapping are excluded. Scientific algorithm structure, durations and aggregate results retained."
+}

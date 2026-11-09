@@ -1,0 +1,132 @@
+{
+  "notice": "Historical scientific registration excerpt, not current compute or submission authorization. Operational authority and private inputs omitted.",
+  "scientific_configuration": {
+    "run": "astra-unown-belief-rao-blackwellization-001",
+    "scope": "sixteen original development stability BO3 histories only; no held-out/native/policy work",
+    "new_native_matches": 0,
+    "held_out_accessed": false,
+    "policy_unchanged": true,
+    "library_lists": 37,
+    "query": "unchanged query set, unknown-copy labels and A uncertain interval[.1,.9]; original selected indices",
+    "configurations": [
+      {
+        "method": "A",
+        "particles": null,
+        "seeds": null,
+        "replays": 16
+      },
+      {
+        "method": "PF",
+        "particles": 512,
+        "seeds": [
+          11,
+          29,
+          47
+        ],
+        "replays": 48
+      },
+      {
+        "method": "PF",
+        "particles": 2048,
+        "seeds": [
+          11,
+          29,
+          47
+        ],
+        "replays": 48
+      },
+      {
+        "method": "RB",
+        "particles": 256,
+        "seeds": [
+          11,
+          29,
+          47
+        ],
+        "replays": 48
+      },
+      {
+        "method": "RB",
+        "particles": 512,
+        "seeds": [
+          11,
+          29,
+          47
+        ],
+        "replays": 48
+      }
+    ],
+    "scheduled_stochastic": 192,
+    "schedule_seed": 900004,
+    "ordinary_settings": {
+      "floor": 4,
+      "recovery_trials": {
+        "512": 256,
+        "2048": 1024
+      },
+      "retry_max_per_game": 4,
+      "retry_spacing_callbacks": 16,
+      "recovery_step_caps": {
+        "512": 2000000,
+        "2048": 8000000
+      }
+    },
+    "candidate_settings": {
+      "sampled": "initial permutation modulo fixed transposition; later chance/proposal streams",
+      "integrated": "binary assignment of two anonymous copies, selected deterministically from the two most numerous different types",
+      "max_exact_branches": 2,
+      "physical_copy_limit": 60,
+      "outer_particles": [
+        256,
+        512
+      ],
+      "floor_per_deck": 4,
+      "recovery_trials": 256,
+      "retry_max_per_game": 4,
+      "retry_spacing_callbacks": 16,
+      "component_step_cap": 2000000,
+      "maximum_explicit_recovery_branch_steps": 4000000,
+      "automatic_materialization": false,
+      "materialization_API": "exact conditional branch draw retains all serial/order/history",
+      "same_target": true,
+      "behavioral_likelihood": false
+    },
+    "limits": {
+      "CPU_core_seconds": 28800,
+      "elapsed_seconds": 28800,
+      "workers": 4,
+      "threads": 1,
+      "worker_address_space_bytes": 1073741824,
+      "per_update_CPU_seconds": 30,
+      "per_readout_CPU_seconds": 10,
+      "output_bytes": 2147483648,
+      "finalization_reserve_seconds": 180,
+      "GPU": 0,
+      "training": 0,
+      "uploads": 0,
+      "submissions": 0,
+      "paid_model_API": 0
+    },
+    "analysis": {
+      "primary": "uncertain-hand Brier",
+      "seed_unit": "average inside BO3",
+      "bootstrap_replicates": 20000,
+      "bootstrap_unit": "paired whole BO3; same resampling indices across methods in each contrast",
+      "equal_history_weights": true,
+      "full_field_claim": false,
+      "operational_A_fallback": true,
+      "common_supported": "intersection of selected supported points across all12 stochastic runs of a history",
+      "concentrated_regression_Brier": 0.01,
+      "concentrated_coverage_decline": 0.1
+    },
+    "screens": {
+      "accuracy_gain": 0.005,
+      "cost_must_not_increase": true,
+      "alternative_speedup": 2,
+      "maximum_Brier_deterioration": 0.002,
+      "maximum_coverage_decline": 0.02,
+      "need_all16_complete_for_screen": true
+    },
+    "failure_policy": "No replacements/extensions; unknown/failed points retained with denominator impact; shared correctness failure stops benchmark; budget stop BUDGET_EXHAUSTED"
+  }
+}
