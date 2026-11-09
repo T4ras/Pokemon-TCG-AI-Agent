@@ -61,8 +61,8 @@
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 924,
-      "sha256": "d522fd241484e4b81e8273c9c6699bf7d972f3914b6376a3c32ce7ffe31ed54a"
+      "bytes": 956,
+      "sha256": "0e870a036ac562eea3a6d5f8d0bc057ecee9d2eb4f8ddb99e472ffad8f03bd65"
     },
     {
       "path": "examples/concealed_cards.py",
@@ -2121,13 +2121,13 @@
     },
     {
       "path": "tools/check_temporal_data.py",
-      "bytes": 3215,
-      "sha256": "b10cc1309f672f4c5f5791eb9745b003edd85e123d7818517c3d2b292eae17fb"
+      "bytes": 3479,
+      "sha256": "d573087e513365fe656379a9b6374613d2bd53a1a3b5c7ff60fb75cee67bfddc"
     },
     {
       "path": "tools/verify_export.py",
-      "bytes": 3546,
-      "sha256": "d6305bd15cad3293fe0f3ac4e08498175551250fcf0192b18e8ea735dd2ef573"
+      "bytes": 3810,
+      "sha256": "8490e60107ec031e54548e1d139822c14b2e86fec13f74b215be41016d5d0b48"
     }
   ],
   "temporal_data_removed": true,

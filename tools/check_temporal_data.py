@@ -1,6 +1,6 @@
 """Reject saved temporal literals in this public export; print paths, not values."""
 from pathlib import Path
-import io,json,re,tokenize,sys
+import io,json,re,tokenize,sys,os
 ROOT=Path(__file__).resolve().parents[1]
 MONTH=r'(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)'
 RULES={
@@ -21,7 +21,12 @@ def check(text,name,start=1,clock=True):
   for m in pattern.finditer(text):issues.append(dict(file=name,kind=kind,line=start+text[:m.start()].count('\n')))
  if clock:
   for m in CLOCK.finditer(text):issues.append(dict(file=name,kind='clock value',line=start+text[:m.start()].count('\n')))
-for p in sorted(ROOT.rglob('*')):
+def export_files():
+ for base,dirs,names in os.walk(ROOT):
+  dirs[:]=[d for d in dirs if d not in {'.git','.venv','__pycache__','.pytest_cache'} and not d.endswith('.egg-info')]
+  for name in names:
+   if not name.endswith(('.pyc','.pyo')):yield Path(base)/name
+for p in sorted(export_files()):
  if not p.is_file():continue
  name=p.relative_to(ROOT).as_posix();count+=1
  check(name,name,clock=False)

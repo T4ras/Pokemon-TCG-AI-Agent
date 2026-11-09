@@ -1,6 +1,6 @@
 """Audit this source-only publication folder without displaying secret values."""
 from pathlib import Path
-import ast,json,re,sys
+import ast,json,re,sys,os
 ROOT=Path(__file__).resolve().parents[1]
 FORBIDDEN={'.pt','.pth','.ckpt','.safetensors','.onnx','.npy','.npz','.pkl','.pickle','.bin','.so','.dll','.zip','.tar','.gz','.log','.jsonl','.xml','.pid','.pyc'}
 PATTERNS={
@@ -15,8 +15,13 @@ PATTERNS={
  'JWT':r'\beyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}',
  'generic credential assignment':r'''(?i)["']?(?:KAGGLE_KEY|KAGGLE_API_TOKEN|OPENAI_API_KEY|api[_-]?key|api[_-]?token|access[_-]?token|refresh[_-]?token|client[_-]?secret|password|passwd)["']?\s*[:=]\s*["']([^"'\r\n]{8,})["']''',
 }
+def export_files():
+ for base,dirs,names in os.walk(ROOT):
+  dirs[:]=[d for d in dirs if d not in {'.git','.venv','__pycache__','.pytest_cache'} and not d.endswith('.egg-info')]
+  for name in names:
+   if not name.endswith(('.pyc','.pyo')):yield Path(base)/name
 issues=[];count=0;py=0
-for p in sorted(ROOT.rglob('*')):
+for p in sorted(export_files()):
  if not p.is_file():continue
  rel=p.relative_to(ROOT);name=rel.as_posix()
  if any(x in rel.parts for x in ['.git','.venv','data','artifacts','private','__pycache__','.pytest_cache']):
